@@ -1,0 +1,5 @@
+1. Tampilan menu ditambahkan efek
+2. Profil komisioner ditambahkan detail profil gunakan popup atau halaman baru
+3. Cek status permohonan informasi publik saat input NIK & Nama lalu submit hilangkan kanvas tersebut lalu muncul data permohonan
+4. Setiap form data ditampilkan dengan datatable yang isinya ada pencarian jumlah data
+5. Halaman klasifikasi informasi ada (berkala, serta merta, tersedia setiap saat) belum ada

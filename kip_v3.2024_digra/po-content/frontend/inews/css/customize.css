@@ -1,0 +1,3917 @@
+/* AREA CUSTOM CSS HADIID */
+.about-inner ul li a {
+  color: white;
+}
+
+.about-inner ul li a:hover {
+  color: #e96b56;
+}
+
+/*
+|--------------|
+|Navbar Desktop|
+|--------------|
+*/
+
+.logo-navbar {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-navbar img {
+  width: 50px;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.logo-text p {
+  font-size: 15.5pt;
+}
+
+.logo-text p span {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.navmenu {
+  padding: 0;
+  transform: translateY(15px);
+}
+
+.navmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navmenu li {
+  position: relative;
+}
+
+.navmenu a i,
+.navmenu a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.navmenu .dropdown ul {
+  margin: 0;
+  padding: 10px 0;
+  background: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  left: 14px;
+  top: 130%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 4px;
+  z-index: 99;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.navmenu .dropdown ul li {
+  min-width: 200px;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #00000089;
+  margin: 5px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  background-color: white;
+}
+
+.navmenu .dropdown ul li:hover{
+  background-color: #e96b56;
+  border-color: #e96b56;
+}
+
+.navmenu .dropdown ul a {
+  padding: 5px 20px;
+  font-size: 15px;
+  text-transform: none;
+  color: black;
+}
+
+.navmenu .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navmenu .dropdown ul a:hover,
+.navmenu .dropdown ul .active:hover,
+.navmenu .dropdown ul li:hover > a {
+  color: #ffffff;
+}
+
+.navmenu .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navmenu .dropdown .dropdown ul {
+  top: -15px;
+  left: -106%;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.navmenu .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: -15px;
+  left: -115%;
+  visibility: visible;
+}
+
+.navmenu .dropdown .specific-dropdown ul {
+  top: -15px;
+  left: -190%;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.navmenu .dropdown .specific-dropdown:hover > ul {
+  opacity: 1;
+  top: -15px;
+  left: -200%;
+  visibility: visible;
+}
+
+.navmenu .dropdown .specific-dropdown2 ul {
+  top: -15px;
+  left: -125%;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.navmenu .dropdown .specific-dropdown2:hover > ul {
+  opacity: 1;
+  top: -15px;
+  left: -135%;
+  visibility: visible;
+}
+
+.navbar-custom {
+  visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+  .navmenu {
+    transform: translateY(0px);
+  }
+
+  .navbar-custom {
+    background-color: white;
+    visibility: visible;
+  }
+
+  .attr-nav button {
+    color: #1b1c26;
+    font-size: 22px;
+    margin: -10px 1px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: black;
+    border: 1px solid color-mix(in srgb, black, transparent 90%);
+    box-shadow: none;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, black, transparent 90%);
+  }
+
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: black;
+  }
+
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    background-color: white;
+    color: black;
+    transform: rotate(180deg);
+  }
+
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
+  .navmenu .dropdown > .dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navmenu > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 993px) {
+  .navmenu button {
+    transform: translateY(0px);
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.hero .carousel {
+  width: 100%;
+  min-height: 80vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media (max-height: 400px) {
+  .hero .carousel {
+    min-height: 110vh;
+  }
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.hero .carousel-inner {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero .carousel-container {
+  margin-top: 230px;
+  position: absolute;
+  inset: 90px 64px 64px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.hero .carousel-inner h1 {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: 700;
+  animation: fadeInDown 1s both;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero .carousel-inner h1 {
+    font-size: 30px;
+  }
+}
+
+.hero .carousel-inner h3 {
+  animation: fadeInDown 1s both 0.2s;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .hero h1,
+  .hero h3 {
+    max-width: 60%;
+  }
+}
+
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  width: 15%;
+  transition: 0.3s;
+  opacity: 0.4;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+  .hero .carousel-control-prev,
+  .hero .carousel-control-next {
+    width: 5%;
+  }
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  color: var(--default-color);
+  font-size: 48px;
+  line-height: 1;
+}
+
+.hero .carousel-indicators li {
+  list-style-type: none;
+  cursor: pointer;
+  background: var(--accent-color);
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin-bottom: 180px;
+  opacity: 0.2;
+}
+
+.hero .carousel-indicators li.active {
+  opacity: 1;
+}
+
+@media (max-height: 768px), (max-width: 1024px) {
+  .hero .carousel-indicators li {
+    margin-bottom: 20px;
+  }
+}
+
+.hero .featured {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-height: 768px), (max-width: 1024px) {
+  .hero .featured {
+    margin-top: 0;
+  }
+}
+
+.hero .featured-item {
+  background-color: white;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .featured-item-special {
+  background-color: white;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50.5px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .featured-item:before {
+  content: "";
+  position: absolute;
+  background: var(--accent-color);
+  inset: 100% 0 0 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.hero .featured-item-special:before {
+  content: "";
+  position: absolute;
+  background: var(--accent-color);
+  inset: 100% 0 0 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.hero .featured-item .icon {
+  margin-bottom: 10px;
+}
+
+.hero .featured-item-special .icon {
+  margin-bottom: 10px;
+}
+
+.hero .featured-item h4 {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.hero .featured-item:hover h4 {
+  color: #e96b56;
+}
+
+.hero .featured-item-special h4 {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.hero .featured-item-special:hover h4 {
+  color: #e96b56;
+}
+
+.hero .featured-item h4 a {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
+
+.hero .featured-item-special h4 a {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-special img {
+  position: relative;
+  object-fit: contain;
+  width: 90%;
+  height: 100px;
+  opacity: 1;
+}
+
+.icon img {
+  position: relative;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e96b56;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.about .content span {
+  font-weight: 700;
+}
+
+.about .content .fst-italic {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.about p {
+  font-size: 16pt;
+  text-align: justify;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about video {
+  width: 600px;
+  height: 350px;
+  object-fit: fill;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+
+.services {
+  margin-bottom: 50px;
+}
+
+.services h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e96b56;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.services .service-item {
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #e96b56;
+  padding: 50px 10px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.services .service-item:hover {
+  background-color: #e96b56;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 50px 10px;
+  transition: all ease-in-out 0.1s;
+  height: 100%;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.services .service-item:hover i {
+  color: #ffffff;
+}
+
+.services .service-item:hover h3 {
+  color: #ffffff;
+}
+
+.services .service-item h3 {
+  color: #e96b56;
+}
+
+.services swiper-container .service-item i {
+  color: #e96b56;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.popular {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+swiper-container {
+  width: 500px;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 1500px;
+}
+
+.berita h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e96b56;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.berita-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.berita-button a {
+  background-color: #e96b56;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.berita-button a:hover {
+  background-color: white;
+  border: 1px solid #e96b56;
+  color: #e96b56;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.permohonan-informasi h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.permohonan-informasi h4 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.permohonan-informasi .row {
+  display: flex;
+  gap: 20px;
+}
+
+.set-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.permohonan-informasi .dropdown .dropdown-menu {
+  padding: 5px 10px;
+}
+
+.keberatan-informasi h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.keberatan-informasi h4 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.keberatan-informasi .row {
+  display: flex;
+  gap: 10px;
+}
+
+#set-col {
+  border: 2px solid #e96b56;
+  border-radius: 1%;
+}
+
+#set-col-2 {
+  border: 2px solid #e96b56;
+  border-radius: 1%;
+  padding: 0px 15px;
+}
+
+.col-modify {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form .form-control-special {
+  box-shadow: none;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 13px;
+  padding: 0;
+  border-color: #e96b56;
+  max-width: fit-content;
+}
+
+.comment-form .form-control-special:focus {
+  border-color: #e96b56;
+}
+
+#captcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.badge-status {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.status-diproses {
+  background-color: blue;
+}
+.status-diterima {
+  background-color: green;
+}
+.status-ditolak {
+  background-color: red;
+}
+
+/*
+------------- CSS DIGRA ----------------
+*/
+
+:root {
+  --nav-font: "Poppins", sans-serif;
+  /* --default-color: #ffffff;
+  --background-color: #060606;
+  --accent-color: #feb52b;
+  --tittle-color: #fc351c; */
+  --default-font: "lato", sans-serif;
+  /* --contrast-color: #312f2f; */
+}
+
+/*
+------Responsive App Blade------
+*/
+
+@media (max-width: 1000px){
+  .navbar .container .logo-navbar{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .container .logo-navbar .attr-nav{
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px){
+  .navbar .container .logo-navbar .attr-nav button{
+    transform: translateY(-17px);
+  }
+}
+
+@media (max-width: 450px){
+  .navbar .container .logo-navbar .logo-and-title img{
+    width: 40px;
+  }
+
+  .navbar .container .logo-navbar .logo-and-title .logo-text p{
+    font-size: 13pt;
+  }
+
+  .navbar .container .logo-navbar .logo-and-title .logo-text p span{
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 400px){
+  .navbar .container .logo-navbar .logo-and-title img{
+    width: 35px;
+  }
+
+  .navbar .container .logo-navbar .logo-and-title .logo-text p{
+    font-size: 10pt;
+  }
+
+  .navbar .container .logo-navbar .logo-and-title .logo-text p span{
+    font-size: 13pt;
+  }
+}
+
+/*
+------Responsive Home Blade------
+*/
+
+@media (max-width: 1200px){
+  #hero .carousel-inner .carousel-container{
+    transform: translateY(-40px);
+  }
+  #about .container .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #services .container .mySwiper .item{
+    display: flex;
+    justify-content: center;
+  }
+  #services .container .mySwiper .service-item{
+    width: 500px;
+  }
+}
+
+@media (max-width: 1070px){
+  #hero .carousel-inner .item img{
+    display: block;
+    min-width: 1200px;
+  }
+  #hero .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .container .tiga{
+    margin: 10px;
+    width: 500px;
+  }
+  #about .container .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #services .container .mySwiper .item{
+    display: flex;
+    justify-content: center;
+  }
+  #services .container .mySwiper .service-item{
+    width: 500px;
+  }
+}
+
+@media (max-width: 620px){
+  #hero .carousel-inner .item h3{
+    text-align: center;
+  }
+  #about .container .content p{
+    font-size: 18px;
+  }
+  #about .container .video video{
+    width: 429px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px){
+  #about .container h1{
+    font-size: 30px;
+  }
+  #about .container .content p{
+    font-size: 15px;
+  }
+  #about .container .video video{
+    width: 343px;
+    height: 200px;
+  }
+  #services .container h1{
+    font-size: 30px;
+  }
+  #services .container swiper-container{
+    width: 300px;
+  }
+  #services .container .mySwiper swiper-slide{
+    width: 900px;
+    overflow: hidden;
+  }
+  #services .container .mySwiper .item{
+    display: flex;
+    justify-content: center;
+  }
+  #services .container .mySwiper .service-item{
+    width: 300px;
+  }
+}
+
+
+/*
+------Visi Misi------
+*/
+
+#VisiMisi .judul h3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: #ffffff;
+  color: #060606;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+#VisiMisi .content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#VisiMisi .content .row {
+  padding: 10px;
+}
+
+#VisiMisi .VISI {
+  width: 800px;
+}
+#VisiMisi .MISI {
+  width: 800px;
+}
+
+#VisiMisi .row p {
+  color: #060606;
+  font-size: 20px;
+}
+
+#VisiMisi .VISI .row {
+  border: 1px solid #fc351c;
+}
+
+#VisiMisi .MISI .row {
+  border: 1px solid #fc351c;
+}
+
+#VisiMisi .spesial {
+  background-color: #fc351c;
+}
+
+#VisiMisi h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#VisiMisi .MISI ul li {
+  color: #060606;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  #VisiMisi .judul h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: #ffffff;
+    color: #060606;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  #VisiMisi .MISI ul li {
+    color: #060606;
+    font-size: 15px;
+  }
+
+  #VisiMisi .row p {
+    color: #060606;
+    font-size: 15px;
+  }
+
+  #VisiMisi h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  #VisiMisi .content {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #VisiMisi .judul h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: #ffffff;
+    color: #060606;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+}
+
+/*
+------Komisioner------
+*/
+
+#Komisioner .judul {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: var(--default-font);
+  font-size: 40px;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+#Komisioner .container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 100%;
+  gap: 40px;
+}
+
+#Komisioner .container .row .ketua {
+  margin-left: -20px;
+}
+
+#Komisioner .container .card {
+  width: 255px;
+  height: 370px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+#Komisioner .container .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+#Komisioner .container .card:hover .isian h4 {
+  color: #e96b56;
+}
+
+#Komisioner .container .card img {
+  width: 250px;
+  height: 250px;
+}
+
+#Komisioner .container .card .isian {
+  display: contents;
+  color: #060606;
+  font-style: normal;
+}
+
+#Komisioner .container .card .isian h4 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+}
+
+#Komisioner .container .card .isian p {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  #Komisioner .container .special-case {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 669px) {
+  #Komisioner .container .card .isian p {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #Komisioner .container .card img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #Komisioner .container .card {
+    width: 205px;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+  }
+
+  #Komisioner .judul {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: var(--default-font);
+    font-size: 35px;
+    align-items: center;
+    margin: 20px 20px;
+  }
+
+  #Komisioner .container .card .isian {
+    display: contents;
+    color: #060606;
+    padding: 20px;
+    margin: 20px;
+    font-style: normal;
+    font-size: 13px;
+  }
+}
+
+/*
+------Profil Ketua------
+*/
+
+#Profil-Ketua h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+#Profil-Ketua .container {
+  padding: 40px;
+  box-shadow: 0 8px 12px 0 #777;
+  border-radius: 20px;
+}
+
+#Profil-Ketua .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Profil-Ketua .container .image {
+  display: flex;
+  align-items: center;
+}
+
+#Profil-Ketua img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+#Profil-Ketua .container .row .profil {
+  padding: 30px;
+}
+
+#Profil-Ketua .container .row h2 {
+  font-size: 30px;
+}
+
+#Profil-Ketua .container .row h4 {
+  font-size: 20px;
+  color: #777;
+}
+
+#Profil-Ketua .container .row p {
+  color: #000000;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  #Profil-Ketua img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua .container .row .profil {
+    padding: 25px;
+  }
+
+  #Profil-Ketua .container .row h2 {
+    font-size: 30px;
+  }
+
+  #Profil-Ketua .container .row h4 {
+    font-size: 20px;
+    color: #777;
+  }
+
+  #Profil-Ketua .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  #Profil-Ketua h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #Profil-Ketua img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua .container .row .profil {
+    padding: 20px;
+  }
+
+  #Profil-Ketua .container .row h2 {
+    font-size: 25px;
+  }
+
+  #Profil-Ketua .container .row h4 {
+    font-size: 15px;
+    color: #777;
+  }
+
+  #Profil-Ketua .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+/*
+------Profil Wakil Ketua------
+*/
+
+#Profil-Wakil-Ketua h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+#Profil-Wakil-Ketua .container {
+  padding: 40px;
+  box-shadow: 0 8px 12px 0 #777;
+  border-radius: 20px;
+}
+
+#Profil-Wakil-Ketua .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Profil-Wakil-Ketua .container .image {
+  display: flex;
+  align-items: center;
+}
+
+#Profil-Wakil-Ketua img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+#Profil-Wakil-Ketua .container .row .profil {
+  padding: 30px;
+}
+
+#Profil-Wakil-Ketua .container .row h2 {
+  font-size: 30px;
+}
+
+#Profil-Wakil-Ketua .container .row h4 {
+  font-size: 20px;
+  color: #777;
+}
+
+#Profil-Wakil-Ketua .container .row p {
+  color: #000000;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  #Profil-Wakil-Ketua img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  #Profil-Wakil-Ketua .container .row .profil {
+    padding: 25px;
+  }
+
+  #Profil-Wakil-Ketua .container .row h2 {
+    font-size: 30px;
+  }
+
+  #Profil-Wakil-Ketua .container .row h4 {
+    font-size: 20px;
+    color: #777;
+  }
+
+  #Profil-Wakil-Ketua .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  #Profil-Wakil-Ketua h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #Profil-Wakil-Ketua img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  #Profil-Wakil-Ketua .container .row .profil {
+    padding: 20px;
+  }
+
+  #Profil-Wakil-Ketua .container .row h2 {
+    font-size: 25px;
+  }
+
+  #Profil-Wakil-Ketua .container .row h4 {
+    font-size: 15px;
+    color: #777;
+  }
+
+  #Profil-Wakil-Ketua .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+/*
+------Profil Ketua PSI------
+*/
+
+#Profil-Ketua-PSI h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+#Profil-Ketua-PSI .container {
+  padding: 40px;
+  box-shadow: 0 8px 12px 0 #777;
+  border-radius: 20px;
+}
+
+#Profil-Ketua-PSI .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Profil-Ketua-PSI .container .image {
+  display: flex;
+  align-items: center;
+}
+
+#Profil-Ketua-PSI img {
+  width: 380px;
+  border-radius: 15px;
+  height: 380px;
+}
+
+#Profil-Ketua-PSI .container .row .profil {
+  padding: 30px;
+}
+
+#Profil-Ketua-PSI .container .row h2 {
+  font-size: 30px;
+}
+
+#Profil-Ketua-PSI .container .row h4 {
+  font-size: 20px;
+  color: #777;
+}
+
+#Profil-Ketua-PSI .container .row p {
+  color: #000000;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  #Profil-Ketua-PSI img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua-PSI .container .row .profil {
+    padding: 25px;
+  }
+
+  #Profil-Ketua-PSI .container .row h2 {
+    font-size: 30px;
+  }
+
+  #Profil-Ketua-PSI .container .row h4 {
+    font-size: 20px;
+    color: #777;
+  }
+
+  #Profil-Ketua-PSI .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  #Profil-Ketua-PSI h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #Profil-Ketua-PSI img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua-PSI .container .row .profil {
+    padding: 20px;
+  }
+
+  #Profil-Ketua-PSI .container .row h2 {
+    font-size: 25px;
+  }
+
+  #Profil-Ketua-PSI .container .row h4 {
+    font-size: 15px;
+    color: #777;
+  }
+
+  #Profil-Ketua-PSI .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+/*
+------Profil Ketua ESA------
+*/
+
+#Profil-Ketua-ESA h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+#Profil-Ketua-ESA .container {
+  padding: 40px;
+  box-shadow: 0 8px 12px 0 #777;
+  border-radius: 20px;
+}
+
+#Profil-Ketua-ESA .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Profil-Ketua-ESA .container .image {
+  display: flex;
+  align-items: center;
+}
+
+#Profil-Ketua-ESA img {
+  width: 380px;
+  border-radius: 15px;
+  height: 380px;
+}
+
+#Profil-Ketua-ESA .container .row .profil {
+  padding: 30px;
+}
+
+#Profil-Ketua-ESA .container .row h2 {
+  font-size: 30px;
+}
+
+#Profil-Ketua-ESA .container .row h4 {
+  font-size: 20px;
+  color: #777;
+}
+
+#Profil-Ketua-ESA .container .row p {
+  color: #000000;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  #Profil-Ketua-ESA img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua-ESA .container .row .profil {
+    padding: 25px;
+  }
+
+  #Profil-Ketua-ESA .container .row h2 {
+    font-size: 30px;
+  }
+
+  #Profil-Ketua-ESA .container .row h4 {
+    font-size: 20px;
+    color: #777;
+  }
+
+  #Profil-Ketua-ESA .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  #Profil-Ketua-ESA h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #Profil-Ketua-ESA img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  #Profil-Ketua-ESA .container .row .profil {
+    padding: 20px;
+  }
+
+  #Profil-Ketua-ESA .container .row h2 {
+    font-size: 25px;
+  }
+
+  #Profil-Ketua-ESA .container .row h4 {
+    font-size: 15px;
+    color: #777;
+  }
+
+  #Profil-Ketua-ESA .container .row p {
+    color: #000000;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+/*
+------Struktur Organisasi------
+*/
+
+#Struktur-Organisasi .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Struktur-Organisasi img {
+  width: 900px;
+}
+
+@media (max-width: 800px) {
+  #Struktur-Organisasi img {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  #Struktur-Organisasi img {
+    width: 500px;
+  }
+}
+
+/*
+------Kontak------
+*/
+
+#Kontak h1 {
+  font-family: var(--default-font);
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#Kontak .about-us h2 {
+  font-family: var(--default-font);
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#Kontak .about-us .info-item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: baseline;
+  min-width: 400px;
+  align-items: center;
+}
+
+#Kontak .about-us .info-item i {
+  color: #ffffff;
+  background: #e96b56;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+#Kontak .about-us .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+#Kontak .about-us .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+#Kontak .about-us .info-item .info-text {
+  margin-top: -10px;
+}
+
+#Kontak .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#Kontak .about-us .row {
+  min-width: 500px;
+}
+
+#Kontak .about-us .kerja {
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fffafa;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#Kontak .about-us .kerja h3 {
+  font-family: var(--default-font);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#Kontak .about-us .kerja-item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: baseline;
+  min-width: 400px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+#Kontak .about-us .kerja-item i {
+  color: #ffffff;
+  background: #e96b56;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+#Kontak .about-us .kerja-item h4 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+#Kontak .about-us .kerja-item p {
+  padding: 0;
+  margin-top: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+
+#Kontak .about-us .php-email-form {
+  height: 100%;
+}
+
+#Kontak .about-us .php-email-form .form-control {
+  margin: 5px;
+}
+
+#Kontak .about-us .php-email-form input[type="text"],
+#Kontak .about-us .php-email-form input[type="email"],
+#Kontak .about-us .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, #ffffff, transparent 50%);
+  border-color: color-mix(in srgb, #060606, transparent 80%);
+}
+
+#Kontak .about-us .php-email-form input[type="text"]:focus,
+#Kontak .about-us .php-email-form input[type="email"]:focus,
+#Kontak .about-us .php-email-form textarea:focus {
+  border-color: #feb52b;
+}
+
+#Kontak .about-us .php-email-form input[type="text"]::placeholder,
+#Kontak .about-us .php-email-form input[type="email"]::placeholder,
+#Kontak .about-us .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, #060606, transparent 70%);
+}
+
+#Kontak .about-us .php-email-form button[type="submit"] {
+  color: #312f2f;
+  background: #feb52b;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+#Kontak .about-us .php-email-form button[type="submit"]:hover {
+  background: color-mix(in srgb, #feb52b, transparent 20%);
+}
+
+/* 
+--------E-PSI--------
+*/
+
+#epsi .container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  margin-bottom: 50px;
+}
+
+#epsi .container .video-psi {
+  margin: 50px 0px 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+#epsi .container .video-psi .penjelasan {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0px 30px;
+}
+
+#epsi .container .video-psi .penjelasan span {
+  font-weight: bold;
+}
+
+#epsi .container .video-psi video {
+  width: 500px;
+}
+
+#epsi .container .accordion {
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  align-items: center;
+  transition: 0.4s;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.services h3,
+.pelayanan-ki h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#epsi .container .pelayanan-ki {
+  margin-bottom: 50px;
+}
+
+#epsi .container .faq .pannel span {
+  font-weight: bold;
+}
+
+#epsi .container .faq .pannel.file {
+  padding: 40px;
+  margin-left: 40px;
+}
+
+.active,
+#epsi .container .accordion:hover {
+  background-color: #f1f7f5;
+}
+
+#epsi .container .faq:hover .accordion {
+  color: #e96b56;
+}
+
+#epsi .container .accordion h4,
+#epsi .container .accordion i {
+  font-size: 25px;
+}
+
+#epsi .container .accordion i {
+  padding: 12px 20px;
+}
+
+#epsi .container .pannel {
+  padding: 0px 20px 10px 20px;
+  background-color: white;
+  overflow: hidden;
+  display: none;
+  border-radius: 10px;
+}
+
+#epsi .container .pannel:hover {
+  background-color: #f1f7f5;
+}
+
+#epsi .container .pannel p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#epsi .container .pannel ol {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#epsi .container .faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 15px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#epsi .container .faq:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
+}
+
+#epsi .container .faq.active {
+  border: none;
+}
+
+#epsi .container .faq .pannel .download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#epsi .container .faq .pannel a {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  border: 1px solid #e96b56;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#epsi .container .faq .pannel a:hover {
+  background-color: #e96b56;
+  border-color: #fff;
+}
+
+#epsi .container .faq .pannel a:hover i,
+#epsi .container .faq .pannel a:hover p {
+  color: #ffffff;
+}
+
+#epsi .container .faq .pannel a i {
+  display: flex;
+  align-items: center;
+  margin: 2px 5px 0px 0px;
+}
+
+#epsi .container .faq .pannel a p {
+  display: flex;
+  align-items: center;
+  margin: -1px 0px 0px 0px;
+}
+
+/* 
+--------Form--------
+*/
+
+#Form .container {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Form h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#Form .container .judul h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#Form .container form {
+  padding: 30px 0 0 0;
+}
+
+#Form .container form .form-row {
+  display: flex;
+  margin: 32px 0;
+  gap: 10px;
+}
+
+#Form .container form .form-row.bawah {
+  display: flex;
+  margin: 70px 0;
+  gap: 10px;
+}
+
+#Form .container form .form-row .input-data-selection {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form .container form .form-row .input-data-selection.atas select {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.2s ease;
+  border: 1px solid #e96c566c;
+  border-radius: 5px;
+}
+
+#Form .container form .form-row .input-data-selection.bawah select {
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+
+#Form .container form .form-row .input-data-selection.atas select:hover {
+  border: 2px solid #e96b56;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+#Form .container form .form-row .input-data-selection option {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#Form .container form .form-row .input-data-selection .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-top: 5px;
+}
+
+#Form .container form .form-row .input-data-selection select:hover ~ .underline:before {
+  transform: scale(0);
+}
+
+#Form .container form .form-row .input-data-selection.bawah .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-top: 5px;
+}
+
+#Form .container form .form-row .input-data-selection.bawah select:hover ~ .underline:before {
+  transform: scale(1);
+}
+
+#Form .container form .form-row .input-data-file {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form .container form .form-row .input-data-file input#file {
+  border: none;
+}
+
+#Form .container form .form-row .input-data-file .input-file {
+  width: 100%;
+  margin-top: -17px;
+  font-weight: normal;
+}
+
+#Form .container form .form-row .input-data-file .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-top: 12px;
+}
+
+#Form .container form .form-row .input-data-file .label-input {
+  display: flex;
+  justify-content: start;
+  margin-top: -4px;
+  transform: translateY(-12px);
+  transition: all 0.4s ease;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#Form .container form .form-row .input-data-file:hover .label-input {
+  transform: translateY(-13px);
+  color: #e96b56;
+  font-weight: normal;
+}
+
+#Form .container form .form-row .input-data-file .input-file:hover ~ .underline:before {
+  transform: scale(1);
+}
+
+#Form .container form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form .container form .form-row .textarea {
+  height: 70px;
+}
+
+#Form .container form .form-row .input-data input,
+#Form .container form .form-row .textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+#Form .container form .form-row .input-data-selection select:hover ~ label {
+  transform: translateY(-25px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+}
+
+#Form .container form .form-row .input-data-selection.bawah select:hover ~ label {
+  transform: translateY(-24px);
+  color: #e96b56;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+
+#Form .container form .form-row .input-data input:focus ~ label,
+#Form .container form .form-row .textarea textarea:focus ~ label,
+#Form .container form .form-row .input-data input:valid ~ label,
+#Form .container form .form-row .textarea textarea:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+  font-weight: normal;
+}
+
+#Form .container form .form-row .textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+#Form .container form .form-row .input-data-selection label {
+  transform: translateY(-24px);
+  position: absolute;
+  pointer-events: none;
+  color: #777;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#Form .container form .form-row .input-data-selection.bawah label {
+  transform: translateY(-24px);
+  position: absolute;
+  pointer-events: none;
+  color: #777;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#Form .container form .form-row .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#Form .container form .form-row .textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #ffffff00;
+}
+
+#Form .container form .form-row .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+#Form .container form .form-row.submit {
+  display: flex;
+  justify-content: center;
+}
+
+#Form .container form .form-row.submit button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100px;
+  padding: 5px;
+  transition: all 0.4s ease;
+  font-size: 20px;
+  border: 1px solid #00000069;
+}
+
+#Form .container form .form-row.submit .input-data-submit:hover button {
+  color: #ffffff;
+  background-color: #e96b56;
+  font-weight: 600;
+  border: 1px solid #e96b56;
+}
+
+@media (max-width: 800px) {
+  #Form .container {
+    width: 500px;
+  }
+
+  #Form .container form .form-row .input-data-selection.bawah label {
+    transform: translateY(-24px);
+    position: absolute;
+    pointer-events: none;
+    color: #777;
+    bottom: 10px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  #Form h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  #Form .container .judul h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  #Form .container {
+    width: 300px;
+  }
+
+  #Form .container form .form-row .input-data-selection.bawah label,
+  #Form .container form .form-row .input-data-selection label,
+  #Form .container form .form-row .input-data label,
+  #Form .container form .form-row .input-data-file label {
+    transform: translateY(-24px);
+    position: absolute;
+    pointer-events: none;
+    color: #777;
+    bottom: 10px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  #Form .container form .form-row.file {
+    display: block;
+    gap: 20px;
+  }
+
+  #Form .container form .form-row.file .input-data-file {
+    margin: 10px;
+  }
+
+  #Form .container form .form-row.file .input-data.file {
+    width: 85%;
+  }
+
+  #Form h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  #Form .container .judul h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+
+/* 
+--------Form Pengajuan Keberatan--------
+*/
+
+#Form2 .container {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Form2 h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#Form2 .container .judul h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#Form2 .container form {
+  padding: 30px 0 0 0;
+}
+
+#Form2 .container form .form-row {
+  display: flex;
+  margin: 32px 0;
+  gap: 10px;
+}
+
+#Form2 .container form .form-row.bawah {
+  display: flex;
+  margin: 70px 0;
+  gap: 10px;
+}
+
+#Form2 .container form .form-row .input-data-selection {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form2 .container form .form-row .input-data-selection select {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.2s ease;
+  border: 1px solid #e96c566c;
+  border-radius: 5px;
+}
+
+#Form2 .container form .form-row .input-data-selection select:hover {
+  border: 2px solid #e96b56;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+#Form2 .container form .form-row .input-data-selection option {
+  color: #000000;
+  background-color: #e96b56;
+}
+
+#Form2 .container form .form-row .input-data-selection .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-top: 5px;
+}
+
+#Form2 .container form .form-row .input-data-selection select:hover ~ .underline:before {
+  transform: scale(0);
+}
+
+#Form2 .container form .form-row .input-data-file {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form2 .container form .form-row .input-data-file input#file {
+  border: none;
+}
+
+#Form2 .container form .form-row .input-data-file .input-file {
+  width: 100%;
+  margin-top: -19px;
+  font-weight: normal;
+}
+
+#Form2 .container form .form-row .input-data-file .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-top: 12px;
+}
+
+#Form2 .container form .form-row .input-data-file .input-file:hover label {
+  color: #e96b56;
+}
+
+#Form2 .container form .form-row .input-data-file .input-file:hover ~ .underline:before {
+  transform: scale(1);
+}
+
+#Form2 .container form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+#Form2 .container form .form-row .textarea {
+  height: 70px;
+}
+
+#Form2 .container form .form-row .input-data input,
+#Form2 .container form .form-row .textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+#Form2 .container form .form-row .input-data-selection select:hover ~ label {
+  transform: translateY(-25px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+}
+
+#Form2 .container form .form-row .input-data-selection.bawah select:hover ~ label {
+  transform: translateY(-24px);
+  color: #e96b56;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+
+#Form2 .container form .form-row .input-data input:focus ~ label,
+#Form2 .container form .form-row .textarea textarea:focus ~ label,
+#Form2 .container form .form-row .input-data input:valid ~ label,
+#Form2 .container form .form-row .textarea textarea:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+}
+
+#Form2 .container form .form-row .textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+#Form2 .container form .form-row .input-data-selection label {
+  transform: translateY(-24px);
+  position: absolute;
+  pointer-events: none;
+  color: #777;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#Form2 .container form .form-row .input-data-selection.bawah label {
+  transform: translateY(-24px);
+  position: absolute;
+  pointer-events: none;
+  color: #777;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#Form2 .container form .form-row .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+}
+
+#Form2 .container form .form-row .textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #ffffff00;
+}
+
+#Form2 .container form .form-row .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+#Form2 .container form .form-row.submit {
+  display: flex;
+  justify-content: center;
+}
+
+#Form2 .container form .form-row.submit button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100px;
+  padding: 5px;
+  transition: all 0.4s ease;
+  font-size: 20px;
+  border: 1px solid #00000069;
+}
+
+#Form2 .container form .form-row.submit .input-data-submit:hover button {
+  color: #ffffff;
+  background-color: #e96b56;
+  font-weight: 600;
+  border: 1px solid #e96b56;
+}
+
+.input-data-submit input:hover ~ .underline:before {
+  transform: scale(1);
+}
+
+@media (max-width: 800px) {
+  #Form2 .container {
+    width: 500px;
+  }
+
+  #Form2 .container form .form-row .input-data-selection.bawah label {
+    transform: translateY(-24px);
+    position: absolute;
+    pointer-events: none;
+    color: #777;
+    bottom: 10px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  #Form2 h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  #Form2 .container .judul h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  #Form2 .container {
+    width: 300px;
+  }
+
+  #Form2 .container form .form-row .input-data-selection.bawah label,
+  #Form2 .container form .form-row .input-data-selection label,
+  #Form2 .container form .form-row .input-data label,
+  #Form2 .container form .form-row .input-data-file label {
+    transform: translateY(-24px);
+    position: absolute;
+    pointer-events: none;
+    color: #777;
+    bottom: 10px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  #Form2 .container form .form-row.file {
+    display: block;
+    gap: 20px;
+  }
+
+  #Form2 .container form .form-row.file .input-data-file {
+    margin: 10px;
+  }
+
+  #Form2 .container form .form-row.file .input-data.file {
+    width: 85%;
+  }
+
+  #Form2 h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  #Form2 .container .judul h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+  }
+}
+
+/* 
+------Form Publik------
+*/
+
+#Form-General h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#Form-General .container {
+  max-width: 2000px;
+  background: #fff;
+  width: 1000px;
+  padding: 25px 40px 25px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Form-General .container .form {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  gap: 20px;
+}
+
+#Form-General .container .button {
+  border: 1px solid #e96b56;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+#Form-General .container .button:hover {
+  background-color: #e96b56;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+#Form-General .container .button a {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Form-General .container .button a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: 0.4s;
+  font-size: large;
+}
+
+#Form-General .container .button:hover a i {
+  color: #fff;
+}
+
+#Form-General .container .button a h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: right;
+  margin-left: 10px;
+  margin-top: 7px;
+  transition: 0.4s;
+}
+
+#Form-General .container .button:hover a h3 {
+  color: #fff;
+}
+
+/* 
+--------Status Permohonan--------
+*/
+
+#Status-Permohonan h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#Status-Permohonan .container {
+  max-width: 2000px;
+  background: #fff;
+  width: 1200px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Status-Permohonan .container h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#Status-Permohonan .container table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Status-Permohonan .container .tbl-header {
+  background-color: #e96b56;
+  border-radius: 15px 15px 0 0;
+}
+
+#Status-Permohonan .container th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  font-size: 20px;
+}
+
+#Status-Permohonan .container .detail-top {
+  width: 55%;
+}
+
+#Status-Permohonan .container .tiga-top {
+  width: 15%;
+}
+
+#Status-Permohonan .container .tbl-content {
+  margin-top: 0px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+#Status-Permohonan .container td.detail {
+  text-align: justify;
+}
+
+#Status-Permohonan .container td {
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+
+#Status-Permohonan .container .info:hover {
+  color: #e96b56;
+}
+
+#Status-Permohonan .container .detail {
+  width: 55%;
+}
+
+#Status-Permohonan .container .tiga {
+  width: 15%;
+}
+
+#Status-Permohonan .container .status {
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e96b56;
+  color: #000000;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+#Status-Permohonan .container .status:hover {
+  background-color: #e96b56;
+  color: white;
+  font-weight: 500;
+}
+
+#Status-Permohonan .container form {
+  padding: 15px;
+}
+
+#Status-Permohonan .container form .form-group .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+#Status-Permohonan .container form .form-group .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+#Status-Permohonan .container form .form-group input:focus ~ .underline:before,
+#Status-Permohonan .container form .form-group input:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+#Status-Permohonan .container form .form-group input:focus ~ label,
+#Status-Permohonan .container form .form-group input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+}
+
+#Status-Permohonan .container form .form-group label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+}
+
+#Status-Permohonan .container form .form-group input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+#Status-Permohonan .container form .form-group {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#Status-Permohonan .container form .btn-status {
+  display: flex;
+  justify-content: center;
+}
+
+#Status-Permohonan .container form .cek-status {
+  padding: 15px 30px;
+  color: #000000;
+  border: 1px solid #e96b56;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  font-size: 20px;
+}
+
+#Status-Permohonan .container form .cek-status:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #e96b56;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  #Status-Permohonan .container {
+    max-width: 2000px;
+    background: #fff;
+    width: 900px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 896px) {
+  #Status-Permohonan .container {
+    max-width: 2000px;
+    background: #fff;
+    width: 600px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+
+  #Status-Permohonan .container table {
+    width: 1200px;
+  }
+
+  #Status-Permohonan .container th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+  }
+}
+
+/* 
+--------Hasil Permohonan--------
+*/
+
+#Hasil-Permohonan .container {
+  max-width: 2000px;
+  background: #fff;
+  width: 1200px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Hasil-Permohonan .container h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#Hasil-Permohonan .container table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Hasil-Permohonan .container .tbl-header {
+  background-color: #e96b56;
+  border-radius: 15px 15px 0 0;
+}
+
+#Hasil-Permohonan .container th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  font-size: 20px;
+}
+
+#Hasil-Permohonan .container .detail-top {
+  width: 55%;
+}
+
+#Hasil-Permohonan .container .tiga-top {
+  width: 15%;
+}
+
+#Hasil-Permohonan .container .tbl-content {
+  margin-top: 0px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+#Hasil-Permohonan .container td.detail {
+  text-align: justify;
+}
+
+#Hasil-Permohonan .container .status-text{
+  text-align: center;
+  margin: 10px;
+}
+
+#Hasil-Permohonan .container .info{
+  padding: 15px;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+
+#Hasil-Permohonan .container .info:hover {
+  color: #e96b56;
+}
+
+#Hasil-Permohonan .container .detail {
+  width: 55%;
+}
+
+#Hasil-Permohonan .container .tiga {
+  width: 15%;
+}
+
+#Hasil-Permohonan .container .status {
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e96b56;
+  color: #000000;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+#Hasil-Permohonan .container .status:hover {
+  background-color: #e96b56;
+  color: white;
+  font-weight: 500;
+}
+
+#Hasil-Permohonan .container .kembali{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Hasil-Permohonan .container a{
+  border: 1px solid #e96b56;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e96b56;
+  color: #f1f7f5;
+  transition: all 0.4s ease;
+}
+
+#Hasil-Permohonan .container a:hover{
+  background-color: #f1f7f5;
+  color: #e96b56;
+}
+
+/* 
+--------Status Keberatan--------
+*/
+
+#Status-Keberatan h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+#Status-Keberatan .container {
+  max-width: 2000px;
+  background: #fff;
+  width: 1200px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  height: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+#Status-Keberatan .container h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#Status-Keberatan .container table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Status-Keberatan .container .tbl-header {
+  background-color: #e96b56;
+  border-radius: 15px 15px 0 0;
+}
+
+#Status-Keberatan .container th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  font-size: 20px;
+}
+
+#Status-Keberatan .container .detail-top {
+  width: 55%;
+}
+
+#Status-Keberatan .container .tiga-top {
+  width: 15%;
+}
+
+#Status-Keberatan .container .tbl-content {
+  margin-top: 0px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+#Status-Keberatan .container td.detail {
+  text-align: justify;
+}
+
+#Status-Keberatan .container td {
+  padding: 15px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+
+#Status-Keberatan .container .info:hover {
+  color: #e96b56;
+}
+
+#Status-Keberatan .container .detail {
+  width: 55%;
+}
+
+#Status-Keberatan .container .tiga {
+  width: 15%;
+}
+
+#Status-Keberatan .container .status {
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e96b56;
+  color: #000000;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+#Status-Keberatan .container .status:hover {
+  background-color: #e96b56;
+  color: white;
+  font-weight: 500;
+}
+
+#Status-Keberatan .container form {
+  padding: 15px;
+}
+
+#Status-Keberatan .container form .form-group .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+#Status-Keberatan .container form .form-group .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #e96b56;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+#Status-Keberatan .container form .form-group input:focus ~ .underline:before,
+#Status-Keberatan .container form .form-group input:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+#Status-Keberatan .container form .form-group input:focus ~ label,
+#Status-Keberatan .container form .form-group input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 14px;
+  color: #e96b56;
+  border: none;
+}
+
+#Status-Keberatan .container form .form-group label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+}
+
+#Status-Keberatan .container form .form-group input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+#Status-Keberatan .container form .form-group {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#Status-Keberatan .container form .btn-status {
+  display: flex;
+  justify-content: center;
+}
+
+#Status-Keberatan .container form .cek-status {
+  padding: 15px 30px;
+  color: #000000;
+  border: 1px solid #e96b56;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  font-size: 20px;
+}
+
+#Status-Keberatan .container form .cek-status:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #e96b56;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  #Status-Keberatan .container {
+    max-width: 2000px;
+    background: #fff;
+    width: 900px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 896px) {
+  #Status-Keberatan .container {
+    max-width: 2000px;
+    background: #fff;
+    width: 600px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    height: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+
+  #Status-Keberatan .container table {
+    width: 1200px;
+  }
+
+  #Status-Keberatan .container th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+  }
+}
+
+/*
+------Prosedur Pelayanan Informasi------
+*/
+
+#Prosedur-Pelayanan-Informasi .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Prosedur-Pelayanan-Informasi img {
+  width: 900px;
+}
+
+@media (max-width: 800px) {
+  #Prosedur-Pelayanan-Informasi img {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  #Prosedur-Pelayanan-Informasi img {
+    width: 500px;
+  }
+}
+
+/*
+------Alur Permohonan------
+*/
+
+#Alur-Permohonan .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Alur-Permohonan img {
+  width: 900px;
+}
+
+@media (max-width: 800px) {
+  #Alur-Permohonan img {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  #Alur-Permohonan img {
+    width: 500px;
+  }
+}
+
+/*
+------Alur Penyelesaian------
+*/
+
+#Alur-Penyelesaian .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Alur-Penyelesaian img {
+  width: 900px;
+}
+
+@media (max-width: 800px) {
+  #Alur-Penyelesaian img {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  #Alur-Penyelesaian img {
+    width: 500px;
+  }
+}
+
+/* 
+--------Page PPID--------
+*/
+
+#Page-PPID .container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#Page-PPID .container .latar {
+  width: 100%;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#Page-PPID .container .latar h2 {
+  margin: 0px 0px 30px 0px;
+}
+
+#Page-PPID .container p {
+  text-align: justify;
+  color: #000000;
+}
+
+#Page-PPID .container .bag {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#Page-PPID .container .bag2 {
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+#Page-PPID .container .latar ul li {
+  color: #000000;
+}
+
+#Page-PPID .container span {
+  font-weight: bold;
+}
+
+#Page-PPID .container .row.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#Page-PPID .container .row .button {
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+#Page-PPID .container .row .button a {
+  font-weight: normal;
+  transition: all 0.4s ease;
+  color: #000000;
+}
+
+#Page-PPID .container .row .button:hover {
+  background-color: #e96b56;
+  border-color: #ffffff;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.5);
+}
+
+#Page-PPID .container .row .button:hover a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* 
+--------Modal Navbar--------
+*/
+
+#myModal .modal-header button.close{
+  color: #000000;
+}
+
+#myModal .modal-body {
+  min-height: auto;
+}
+
+#myModal .modal-body .container {
+  max-width: 100%;
+  margin: auto;
+}
+
+#myModal .modal-body .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#myModal .modal-body .container .row.satu {
+  margin-bottom: 20px;
+}
+
+#myModal .modal-body .container .row .col-xs- {
+  padding: 5px;
+}
+
+#myModal .modal-body .container .row ul {
+  list-style: none;
+}
+
+#myModal .modal-body .container .row .Dropdown,
+#myModal .modal-body .container .row .Dropdown {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#myModal .modal-body .container .row .Dropdown .spesifik1,
+#myModal .modal-body .container .row .Dropdown .spesifik2 {
+  overflow: hidden;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
+}
+
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik3,
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik4,
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik5 {
+  overflow: hidden;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  transition: all .5s ease-in-out 0s;
+}
+
+#myModal .modal-body .container .row .lainnya{
+  margin-bottom: 10px;
+}
+
+#myModal .modal-body .container .row  .Dropdown .spesifik2{
+  margin: 5px 5px 5px -20px;
+}
+
+#myModal .modal-body .container .row  .Dropdown .spesifik1{
+  margin: 5px 5px 5px -20px;
+}
+
+#myModal .modal-body .container .row .Dropdown .spesifik1.open,
+#myModal .modal-body .container .row .Dropdown .spesifik2.open {
+  max-height:500px;
+  opacity: 1;
+  z-index: 9998;
+}
+
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik3.open,
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik4.open,
+#myModal .modal-body .container .row .Dropdown .spesifik2 .spesifik5.open{
+  max-height:500px;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#myModal .modal-body .container .row form .pencarian{
+  width: 100%;
+  display: flex;
+  gap: -5px;
+  margin-top: 10px;
+}
+
+#myModal .modal-body .container .row form input{
+  border: 1px solid #000000;
+  border-right: none;
+  background-color: transparent;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#myModal .modal-body .container .row form button{
+  border: none;
+  background-color: #e96b56;
+  color: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+@media (max-width: 990px) {
+  #myModal .modal-body .container .row h5 {
+    font-size: 12px;
+  }
+
+  #myModal .modal-body .container .row .Dropdown>h5 a,
+  #myModal .modal-body .container .row .Dropdown>h5 a{
+    display: flex;
+    align-items: center;
+  }
+
+  #myModal .modal-body .container .row.dua{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+------------- END CSS DIGRA ----------------
+*/
+
+/*
+------------- CSS RAFLY ----------------
+*/
+
+#FAQ .container {
+  max-width: 70%;
+  margin: auto;
+}
+
+#FAQ .container .faq-header {
+  margin-bottom: 20px;
+}
+
+#FAQ .container .faq-header h1 {
+  letter-spacing: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#FAQ .container .faq-header p {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+#FAQ .container .accordion {
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  align-items: center;
+  transition: 0.4s;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#FAQ .container .accordion .pertanyaan {
+  display: flex;
+  justify-content: start;
+  text-align: left;
+}
+
+.active,
+#FAQ .container .accordion:hover {
+  background-color: #f1f7f5;
+}
+
+#FAQ .container .faq:hover .accordion {
+  color: #e96b56;
+}
+
+#FAQ .container .accordion h4,
+#FAQ .container .accordion i {
+  font-size: 25px;
+}
+
+#FAQ .container .accordion i {
+  padding: 12px 20px;
+}
+
+#FAQ .container .pannel {
+  padding: 0px 20px 10px 20px;
+  background-color: white;
+  overflow: hidden;
+  display: none;
+  border-radius: 10px;
+}
+
+#FAQ .container .pannel:hover {
+  background-color: #f1f7f5;
+}
+
+#FAQ .container .pannel p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#FAQ .container .pannel ol {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#FAQ .container .faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 15px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#FAQ .container .faq:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
+}
+
+#FAQ .container .faq.active {
+  border: none;
+}
+
+#Regulasi h1 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+#Regulasi .container .tbl-header {
+  background-color: #e96b56;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4); */
+  border-radius: 15px 15px 0 0;
+}
+
+#Regulasi .container .tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid #e96b56;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+#Regulasi .container table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#Regulasi .container table th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  font-size: 20px;
+}
+
+#Regulasi .container table .tentang{
+  width: 55%;
+}
+
+#Regulasi .container table .judul{
+  width: 15%;
+}
+
+#Regulasi .container table .keterangan{
+  width: 15%;
+}
+
+#Regulasi .container table .file{
+  width: 15%;
+}
+
+#Regulasi .container table td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+#Regulasi .container table td:hover {
+  color: #e96b56;
+}
+
+/*
+------------- END CSS RAFLY ----------------
+*/
